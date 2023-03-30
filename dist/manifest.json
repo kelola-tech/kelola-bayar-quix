@@ -1,0 +1,7 @@
+{
+  "src/main.ts": {
+    "file": "quix.umd.js",
+    "isEntry": true,
+    "src": "src/main.ts"
+  }
+}
