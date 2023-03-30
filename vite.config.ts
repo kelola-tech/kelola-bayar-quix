@@ -1,11 +1,11 @@
 import { resolve } from "path";
-import { uglify } from "rollup-plugin-uglify";
 import { defineConfig } from "vite";
 import commonjs from "vite-plugin-commonjs";
+import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 export default defineConfig(() => {
   return {
-    plugins: [commonjs()],
+    plugins: [commonjs(), ViteMinifyPlugin({})],
     build: {
       manifest: true,
       minify: true,
@@ -13,15 +13,12 @@ export default defineConfig(() => {
       lib: {
         // Could also be a dictionary or array of multiple entry points
         entry: resolve(__dirname, "src/main.ts"),
-        name: "Kelola Bayar Snap",
+        name: "Kelola Bayar Quix",
         // the proper extensions will be added
         fileName: "quix",
         formats: ["cjs", "es", "umd"],
       },
       commonjsOptions: {},
-      rollupOptions: {
-        plugins: [uglify()],
-      },
     },
   };
 });

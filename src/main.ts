@@ -19,7 +19,7 @@ interface IPayCallback {
   onClose: (data: any) => void;
 }
 
-class Kelar {
+export class Kelar {
   private widget: Widget;
 
   constructor() {
@@ -128,14 +128,9 @@ class Kelar {
 if (window.addEventListener) {
   window.addEventListener("load", () => {
     // @TODO: BUG - Kelar was initialized twice when called pay method twice
-    window.kelar = new Kelar();
-    window.kelar.init();
+    window.quix = new Kelar();
+    window.quix.init();
   });
-  
-  // Listen message from widget
-  // window.addEventListener("message", (event) => {
-  //   window.kelar.handleMessage(event)
-  // }, false);
 }
 
 
