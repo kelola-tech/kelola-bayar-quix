@@ -2,6 +2,8 @@
 
 Is a payment gateway widget by Kelola
 
+![image-removebg-preview](https://user-images.githubusercontent.com/27531592/228733371-c5ea5804-3cb9-4259-a8e5-d4aaf8d67097.png)
+
 # Integration Steps Overview
 
 1. Acquire Quix transaction token on your backend
