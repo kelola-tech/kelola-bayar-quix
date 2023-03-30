@@ -19,7 +19,7 @@ interface IPayCallback {
   onClose: (data: any) => void;
 }
 
-export class Kelar {
+class Kelar {
   private widget: Widget;
 
   constructor() {

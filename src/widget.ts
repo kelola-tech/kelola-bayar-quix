@@ -22,7 +22,7 @@ export default class Widget {
 
   protected setup() {
     try {
-      const baseUrl = new URL('https://kelola-bayar.vercel.app/snap/pay');
+      const baseUrl = new URL('https://app.kelola-bayar.id/snap/pay');
       const sourceOrigin = window.location.origin;
       const digest = "soon";
       const elScripts = document.getElementsByTagName("script");
