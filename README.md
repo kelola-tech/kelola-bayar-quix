@@ -16,7 +16,7 @@ Is a payment gateway widget by Kelola
 | Field             | Value                        |
 | ----------------- | ---------------------------- |
 | Client Key        | Coming soon                  |
-| `quix.js` url     | ...                          |
+| `quix.js` url     | https://github.com/kelola-tech/kelola-bayar-quix/releases/download/1.0.0/quix.js                          |
 | Transaction Token | Retrieved from backend (API) |
 
 # How to use
@@ -25,7 +25,7 @@ Is a payment gateway widget by Kelola
 
 ```javascript
 <script type="text/javascript"
-    src="quix.js"`
+    src="https://github.com/kelola-tech/kelola-bayar-quix/releases/download/1.0.0/quix.js"`
     data-client-key="SET_YOUR_CLIENT_KEY_HERE"></script>
 ```
 
